@@ -1,0 +1,265 @@
+object Form1: TForm1
+  Left = 324
+  Height = 414
+  Top = 250
+  Width = 562
+  BorderStyle = bsDialog
+  Caption = 'Gerador de hash'
+  ClientHeight = 414
+  ClientWidth = 562
+  Color = clWhite
+  Position = poScreenCenter
+  object Label1: TLabel
+    Left = 0
+    Height = 39
+    Top = 12
+    Width = 562
+    Align = alTop
+    Alignment = taCenter
+    BorderSpacing.Top = 12
+    BorderSpacing.Bottom = 3
+    Caption = 'Gerador de hash'
+    Font.CharSet = ANSI_CHARSET
+    Font.Height = -29
+    Font.Name = 'Palatino Linotype'
+    Font.Pitch = fpVariable
+    Font.Quality = fqDraft
+    Font.Style = [fsBold]
+    ParentColor = False
+    ParentFont = False
+  end
+  object Memo1: TMemo
+    Left = 24
+    Height = 90
+    Top = 82
+    Width = 514
+    Align = alTop
+    BorderSpacing.Left = 24
+    BorderSpacing.Right = 24
+    BorderSpacing.Bottom = 2
+    Lines.Strings = (
+      'Memo1'
+    )
+    TabOrder = 0
+  end
+  object Label2: TLabel
+    Left = 24
+    Height = 26
+    Top = 54
+    Width = 514
+    Align = alTop
+    BorderSpacing.Left = 24
+    BorderSpacing.Right = 24
+    BorderSpacing.Bottom = 2
+    Caption = 'Texto'
+    Font.CharSet = ANSI_CHARSET
+    Font.Height = -19
+    Font.Name = 'Palatino Linotype'
+    Font.Pitch = fpVariable
+    Font.Quality = fqDraft
+    ParentColor = False
+    ParentFont = False
+  end
+  object Memo2: TMemo
+    Left = 24
+    Height = 90
+    Top = 251
+    Width = 514
+    Align = alTop
+    BorderSpacing.Left = 24
+    BorderSpacing.Right = 24
+    BorderSpacing.Bottom = 2
+    Lines.Strings = (
+      'Memo1'
+    )
+    TabOrder = 1
+  end
+  object Label3: TLabel
+    Left = 24
+    Height = 26
+    Top = 223
+    Width = 514
+    Align = alTop
+    BorderSpacing.Left = 24
+    BorderSpacing.Right = 24
+    BorderSpacing.Bottom = 2
+    Caption = 'Hash'
+    Font.CharSet = ANSI_CHARSET
+    Font.Height = -19
+    Font.Name = 'Palatino Linotype'
+    Font.Pitch = fpVariable
+    Font.Quality = fqDraft
+    ParentColor = False
+    ParentFont = False
+  end
+  object FlowPanel1: TFlowPanel
+    Left = 24
+    Height = 33
+    Top = 184
+    Width = 514
+    Align = alTop
+    BevelOuter = bvNone
+    BorderSpacing.Left = 24
+    BorderSpacing.Top = 12
+    BorderSpacing.Right = 24
+    BorderSpacing.Bottom = 6
+    ControlList = <    
+      item
+        Control = RadioButton1
+        WrapAfter = waAuto
+        Index = 0
+      end    
+      item
+        Control = RadioButton2
+        WrapAfter = waAuto
+        Index = 1
+      end    
+      item
+        Control = RadioButton3
+        WrapAfter = waAuto
+        Index = 2
+      end    
+      item
+        Control = RadioButton4
+        WrapAfter = waAuto
+        Index = 3
+      end    
+      item
+        Control = RadioButton5
+        WrapAfter = waAuto
+        Index = 4
+      end    
+      item
+        Control = RadioButton6
+        WrapAfter = waAuto
+        Index = 5
+      end    
+      item
+        Control = RadioButton7
+        WrapAfter = waAuto
+        Index = 6
+      end    
+      item
+        Control = RadioButton8
+        WrapAfter = waAuto
+        Index = 7
+      end    
+      item
+        Control = RadioButton9
+        WrapAfter = waAuto
+        Index = 8
+      end>
+    FlowLayout = tlTop
+    FlowStyle = fsLeftRightTopBottom
+    TabOrder = 2
+    object RadioButton1: TRadioButton
+      Left = 6
+      Height = 19
+      Top = 6
+      Width = 45
+      Anchors = []
+      BorderSpacing.Around = 6
+      Caption = 'MD5'
+      TabOrder = 0
+    end
+    object RadioButton2: TRadioButton
+      Left = 63
+      Height = 19
+      Top = 6
+      Width = 45
+      Anchors = []
+      BorderSpacing.Around = 6
+      Caption = 'MD5'
+      TabOrder = 1
+    end
+    object RadioButton3: TRadioButton
+      Left = 120
+      Height = 19
+      Top = 6
+      Width = 45
+      Anchors = []
+      BorderSpacing.Around = 6
+      Caption = 'MD5'
+      TabOrder = 2
+    end
+    object RadioButton4: TRadioButton
+      Left = 177
+      Height = 19
+      Top = 6
+      Width = 45
+      Anchors = []
+      BorderSpacing.Around = 6
+      Caption = 'MD5'
+      TabOrder = 3
+    end
+    object RadioButton5: TRadioButton
+      Left = 234
+      Height = 19
+      Top = 6
+      Width = 45
+      Anchors = []
+      BorderSpacing.Around = 6
+      Caption = 'MD5'
+      TabOrder = 4
+    end
+    object RadioButton6: TRadioButton
+      Left = 291
+      Height = 19
+      Top = 6
+      Width = 45
+      Anchors = []
+      BorderSpacing.Around = 6
+      Caption = 'MD5'
+      TabOrder = 5
+    end
+    object RadioButton7: TRadioButton
+      Left = 348
+      Height = 19
+      Top = 6
+      Width = 45
+      Anchors = []
+      BorderSpacing.Around = 6
+      Caption = 'MD5'
+      TabOrder = 6
+    end
+    object RadioButton8: TRadioButton
+      Left = 405
+      Height = 19
+      Top = 6
+      Width = 45
+      Anchors = []
+      BorderSpacing.Around = 6
+      Caption = 'MD5'
+      TabOrder = 7
+    end
+    object RadioButton9: TRadioButton
+      Left = 462
+      Height = 19
+      Top = 6
+      Width = 45
+      Anchors = []
+      BorderSpacing.Around = 6
+      Caption = 'MD5'
+      TabOrder = 8
+    end
+  end
+  object Panel1: TPanel
+    Left = 432
+    Height = 35
+    Top = 360
+    Width = 106
+    BevelOuter = bvNone
+    Caption = 'Gerar'
+    Color = clBlack
+    Font.CharSet = ANSI_CHARSET
+    Font.Color = clWhite
+    Font.Height = -16
+    Font.Name = 'Segoe UI Semibold'
+    Font.Pitch = fpVariable
+    Font.Quality = fqDraft
+    Font.Style = [fsBold]
+    ParentColor = False
+    ParentFont = False
+    TabOrder = 3
+  end
+end
