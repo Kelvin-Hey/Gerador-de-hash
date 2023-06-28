@@ -5,7 +5,7 @@ unit view.main;
 interface
 
 uses
-  Classes, SysUtils, Forms, Controls, Graphics, Dialogs, StdCtrls, ExtCtrls;
+  Classes, SysUtils, Forms, Controls, Graphics, Dialogs, StdCtrls, ExtCtrls, md5;
 
 type
 
@@ -16,18 +16,15 @@ type
     Label1: TLabel;
     Label2: TLabel;
     Label3: TLabel;
-    Memo1: TMemo;
-    Memo2: TMemo;
-    Panel1: TPanel;
-    RadioButton1: TRadioButton;
+    memo1: TMemo;
+    memo2: TMemo;
+    btnGerar: TPanel;
+    checkMD5: TRadioButton;
     RadioButton2: TRadioButton;
-    RadioButton3: TRadioButton;
-    RadioButton4: TRadioButton;
-    RadioButton5: TRadioButton;
-    RadioButton6: TRadioButton;
     RadioButton7: TRadioButton;
     RadioButton8: TRadioButton;
-    RadioButton9: TRadioButton;
+    procedure btnGerarClick(Sender: TObject);
+
   private
 
   public
@@ -40,6 +37,14 @@ var
 implementation
 
 {$R *.lfm}
+
+{ TForm1 }
+
+procedure TForm1.btnGerarClick(Sender: TObject);
+begin
+  if checkMD5.Checked = true then
+    memo2.Text := MD5Print(MD5String(memo1.Text));
+end;
 
 end.
 

@@ -28,7 +28,7 @@ object Form1: TForm1
     ParentColor = False
     ParentFont = False
   end
-  object Memo1: TMemo
+  object memo1: TMemo
     Left = 24
     Height = 90
     Top = 82
@@ -57,7 +57,7 @@ object Form1: TForm1
     ParentColor = False
     ParentFont = False
   end
-  object Memo2: TMemo
+  object memo2: TMemo
     Left = 24
     Height = 90
     Top = 251
@@ -99,7 +99,7 @@ object Form1: TForm1
     BorderSpacing.Bottom = 6
     ControlList = <    
       item
-        Control = RadioButton1
+        Control = checkMD5
         WrapAfter = waAuto
         Index = 0
       end    
@@ -121,7 +121,7 @@ object Form1: TForm1
     FlowLayout = tlTop
     FlowStyle = fsLeftRightTopBottom
     TabOrder = 2
-    object RadioButton1: TRadioButton
+    object checkMD5: TRadioButton
       Left = 6
       Height = 19
       Top = 6
@@ -162,7 +162,8 @@ object Form1: TForm1
       TabOrder = 3
     end
   end
-  object Panel1: TPanel
+  object btnGerar: TPanel
+    Cursor = crHandPoint
     Left = 432
     Height = 35
     Top = 360
@@ -180,5 +181,6 @@ object Form1: TForm1
     ParentColor = False
     ParentFont = False
     TabOrder = 3
+    OnClick = btnGerarClick
   end
 end

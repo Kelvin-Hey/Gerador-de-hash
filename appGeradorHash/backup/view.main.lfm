@@ -28,7 +28,7 @@ object Form1: TForm1
     ParentColor = False
     ParentFont = False
   end
-  object Memo1: TMemo
+  object memo1: TMemo
     Left = 24
     Height = 90
     Top = 82
@@ -37,9 +37,6 @@ object Form1: TForm1
     BorderSpacing.Left = 24
     BorderSpacing.Right = 24
     BorderSpacing.Bottom = 2
-    Lines.Strings = (
-      'Memo1'
-    )
     TabOrder = 0
   end
   object Label2: TLabel
@@ -60,7 +57,7 @@ object Form1: TForm1
     ParentColor = False
     ParentFont = False
   end
-  object Memo2: TMemo
+  object memo2: TMemo
     Left = 24
     Height = 90
     Top = 251
@@ -69,9 +66,6 @@ object Form1: TForm1
     BorderSpacing.Left = 24
     BorderSpacing.Right = 24
     BorderSpacing.Bottom = 2
-    Lines.Strings = (
-      'Memo1'
-    )
     TabOrder = 1
   end
   object Label3: TLabel
@@ -105,7 +99,7 @@ object Form1: TForm1
     BorderSpacing.Bottom = 6
     ControlList = <    
       item
-        Control = RadioButton1
+        Control = checkMD5
         WrapAfter = waAuto
         Index = 0
       end    
@@ -115,44 +109,19 @@ object Form1: TForm1
         Index = 1
       end    
       item
-        Control = RadioButton3
+        Control = RadioButton7
         WrapAfter = waAuto
         Index = 2
       end    
       item
-        Control = RadioButton4
-        WrapAfter = waAuto
-        Index = 3
-      end    
-      item
-        Control = RadioButton5
-        WrapAfter = waAuto
-        Index = 4
-      end    
-      item
-        Control = RadioButton6
-        WrapAfter = waAuto
-        Index = 5
-      end    
-      item
-        Control = RadioButton7
-        WrapAfter = waAuto
-        Index = 6
-      end    
-      item
         Control = RadioButton8
         WrapAfter = waAuto
-        Index = 7
-      end    
-      item
-        Control = RadioButton9
-        WrapAfter = waAuto
-        Index = 8
+        Index = 3
       end>
     FlowLayout = tlTop
     FlowStyle = fsLeftRightTopBottom
     TabOrder = 2
-    object RadioButton1: TRadioButton
+    object checkMD5: TRadioButton
       Left = 6
       Height = 19
       Top = 6
@@ -166,84 +135,34 @@ object Form1: TForm1
       Left = 63
       Height = 19
       Top = 6
-      Width = 45
+      Width = 54
       Anchors = []
       BorderSpacing.Around = 6
-      Caption = 'MD5'
+      Caption = 'SHA-1'
       TabOrder = 1
     end
-    object RadioButton3: TRadioButton
-      Left = 120
+    object RadioButton7: TRadioButton
+      Left = 129
       Height = 19
       Top = 6
-      Width = 45
+      Width = 66
       Anchors = []
       BorderSpacing.Around = 6
-      Caption = 'MD5'
+      Caption = 'SHA-256'
       TabOrder = 2
     end
-    object RadioButton4: TRadioButton
-      Left = 177
+    object RadioButton8: TRadioButton
+      Left = 207
       Height = 19
       Top = 6
-      Width = 45
+      Width = 66
       Anchors = []
       BorderSpacing.Around = 6
-      Caption = 'MD5'
+      Caption = 'SHA-512'
       TabOrder = 3
     end
-    object RadioButton5: TRadioButton
-      Left = 234
-      Height = 19
-      Top = 6
-      Width = 45
-      Anchors = []
-      BorderSpacing.Around = 6
-      Caption = 'MD5'
-      TabOrder = 4
-    end
-    object RadioButton6: TRadioButton
-      Left = 291
-      Height = 19
-      Top = 6
-      Width = 45
-      Anchors = []
-      BorderSpacing.Around = 6
-      Caption = 'MD5'
-      TabOrder = 5
-    end
-    object RadioButton7: TRadioButton
-      Left = 348
-      Height = 19
-      Top = 6
-      Width = 45
-      Anchors = []
-      BorderSpacing.Around = 6
-      Caption = 'MD5'
-      TabOrder = 6
-    end
-    object RadioButton8: TRadioButton
-      Left = 405
-      Height = 19
-      Top = 6
-      Width = 45
-      Anchors = []
-      BorderSpacing.Around = 6
-      Caption = 'MD5'
-      TabOrder = 7
-    end
-    object RadioButton9: TRadioButton
-      Left = 462
-      Height = 19
-      Top = 6
-      Width = 45
-      Anchors = []
-      BorderSpacing.Around = 6
-      Caption = 'MD5'
-      TabOrder = 8
-    end
   end
-  object Panel1: TPanel
+  object btnGerar: TPanel
     Left = 432
     Height = 35
     Top = 360
@@ -261,5 +180,6 @@ object Form1: TForm1
     ParentColor = False
     ParentFont = False
     TabOrder = 3
+    OnClick = btnGerarClick
   end
 end
