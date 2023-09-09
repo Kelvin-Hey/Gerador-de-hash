@@ -1,13 +1,10 @@
-# Gerador de hash
+<h2 align="center"><b>Gerador de hash</b></h2>
 
-## Contexto
-
+### Descrição
 Trata-se de um gerador de hash simples, que pode ser utilizado para melhorar a <strong>segurança de suas senhas</strong> ou para fins diversos
 
-## Tecnologias utilizadas
-
+### Tecnologias utilizadas
 Object Pascal, Lazarus IDE
 
-## Preview da Aplicação
-
+### Preview da Aplicação
 <p><img src="https://raw.githubusercontent.com/Kelvin-Hey/Gerador-de-hash/main/appGeradorHash/img/app_gerador_hash.png" /></p>
